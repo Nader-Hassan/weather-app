@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/1779940.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/index_style.css">
+    <link rel="stylesheet" href="assets/css/media_index.css">
+    <title>Weather app</title>
+    </head>
+       <body>
+        <h1 class="text-center text-white  head-name"><span class="color-edit">Weather</span> app</h1>
+        <div class="container-fluid mt-5 text-center">
+            <div class="row">
+                <div class="col-md-3 animate__animated animate__backInLeft animate__delay-1s fs-edit">
+                    <img id="weatherIcon"  width="90">
+                    <h3 id="weather-condition"></h3>
+                    <h3><span id="city"></span>, <span id="country"></span></h3>
+                    <h2><span id="tempC"></span>&#176; C</h2>
+                    <h3 id="mainDay"></h3>
+                    <h3><span id="dayNumber"></span> <span id="mainMonth"></span></h3>
+                </div>
+                <div class="col-md-6 m-auto mt-5"><input type="text" class="form-control input-edit" placeholder="Search here" id="searchWeather"></div>
+                <div class="col-md-3 ">
+                    <div class="animate__animated animate__fadeInDown animation-delay">
+                        <i class="fa-solid fa-wind d-inline-block"></i>
+                        <h3 class="d-inline-block ms-2">Wind speed</h3>
+                        <h4 class="ms-5"><span id="windSpeed"></span> km/h</h4>
+                    </div>
+                    <div class="my-3 animate__animated animate__fadeInDown animation-delay1 ">
+                        <i class="fa-solid fa-droplet d-inline-block"></i>
+                        <h3 class="d-inline-block ms-2">Humidity</h3>
+                        <h4 class="ms-5"><span id="humidity"></span> %</h4>
+                    </div>
+                  <div class="mb-3 animate__animated animate__fadeInDown animation-delay2">
+                    <i class="fa-solid fa-cloud-showers-heavy d-inline-block"></i>
+                    <h3 class="d-inline-block ms-2">Chance of rain</h3>
+                    <h4 class="ms-5"><span id="rainChance"></span> %</h4>
+                  </div>
+              <div class="animate__animated animate__fadeInDown animation-delay3">
+                <i class="fa-solid fa-temperature-arrow-down d-inline-block"></i>
+                <h3 class="d-inline-block ms-2">Air pressure</h3>
+                <h4 class="ms-5"><span id="airPressure"></span> PS</h4>
+              </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="black-square">
+                        <h3 id="dayOne"></h3>
+                        <img id="dayOneIcon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                        <h4 id="dayOneCon"></h4>
+                        <h2><span id="dayOneTemp"></span>&#176; C</h2>
+                        <h3 class="blue-text"><span id="dayOneNight"></span>&#176; C</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="black-square">
+                        <h3 id="dayTwo"></h3>
+                        <img id="dayTwoIcon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                        <h4 id="dayTwoCon"></h4>
+                        <h2><span id="dayTwoTemp"></span>&#176; C</h2>
+                        <h3 class="blue-text"><span id="dayTwoNight"></span>&#176; C</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="black-square">
+                        <h3 id="dayThree"></h3>
+                        <img id="dayThreeIcon" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                        <h4 id="dayThreeCon"></h4>
+                        <h2><span id="dayThreeTemp"></span>&#176; C</h2>
+                        <h3 class="blue-text"><span id="dayThreeNight"></span>&#176; C</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="assets/js/main_Js.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

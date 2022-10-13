@@ -1,0 +1,81 @@
+body
+{
+    background-image: url(../images/pexels-quang-nguyen-vinh-2162439.jpg);
+    background-size: cover;
+    background-position: center center;
+  
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    color: white;
+    font-family: 'Poppins', sans-serif;;
+}
+::placeholder {
+   color: azure !important;
+   opacity: 1; /* Firefox */
+ }
+ 
+ :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: azure !important;
+ }
+ 
+ ::-ms-input-placeholder { /* Microsoft Edge */
+  color: azure !important;
+ }
+.input-edit
+{
+   background-color: transparent;
+   border-radius: 20px; 
+}
+.input-edit:focus
+{
+   background-color: transparent;
+   color: white;
+   box-shadow: none;
+}
+
+h3 , h4
+{
+    font-weight: 200;
+}
+
+.black-square
+{
+    background-color: rgba(0,0,0,0.7);
+
+    padding: 40px 20px;
+}
+.animation-delay
+ {
+    animation-duration: 0.8s;
+ }
+ .animation-delay1
+ {
+    animation-duration: 1.6s;
+ }
+ .animation-delay2
+ {
+    animation-duration: 2.4s;
+ }
+ .animation-delay3
+ {
+    animation-duration: 3.2s;
+ }
+ .blue-text
+ {
+   color: aqua;
+   font-weight: 500;
+ }
+ .color-edit
+ {
+   color: aqua;
+ }
+ .head-name
+ {
+   padding-top: 100px;
+   font-size: 50px;
+ }
+ .fs-edit h2
+ {
+   font-size: 75px;
+ }
