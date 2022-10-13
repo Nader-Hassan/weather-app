@@ -20,9 +20,7 @@ document.getElementById("dayNumber").innerHTML = dayNumber;
 
 
 async function Displayweather(){
-    let ipaddress = await fetch('http://ip-api.com/json')
-    let allIpAddress = await ipaddress.json()
-    let weather= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=77ce7274d0df4d6787290555221210&q=${allIpAddress.city}&days=4`)
+    let weather= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=77ce7274d0df4d6787290555221210&q=auto:ip&days=4`)
     let allWeather= await weather.json();
     console.log(allWeather)
     document.getElementById('tempC').innerHTML = allWeather.current.temp_c
