@@ -20,9 +20,8 @@ document.getElementById("dayNumber").innerHTML = dayNumber;
 
 
 async function Displayweather(){
-    let weather= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=77ce7274d0df4d6787290555221210&q=auto:ip&days=4`)
+    let weather= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d12fc5a524f242d0ac9155736220211&q=auto:ip&days=4`)
     let allWeather= await weather.json();
-    console.log(allWeather)
     document.getElementById('tempC').innerHTML = allWeather.current.temp_c
     document.getElementById('windSpeed').innerHTML = allWeather.current.wind_kph
     document.getElementById('humidity').innerHTML = allWeather.current.humidity
@@ -50,9 +49,8 @@ async function Displayweather(){
 
     
 async function searchWeather(term){
-    let weather= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=77ce7274d0df4d6787290555221210&q=${term}&days=4`)
+    let weather= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=d12fc5a524f242d0ac9155736220211&q=${term}&days=4`)
     let allWeather= await weather.json();
-    console.log(allWeather)
     document.getElementById('tempC').innerHTML = allWeather.current.temp_c
     document.getElementById('windSpeed').innerHTML = allWeather.current.wind_kph
     document.getElementById('humidity').innerHTML = allWeather.current.humidity
@@ -90,5 +88,29 @@ document.getElementById('searchWeather').addEventListener('input' , function(){
     }
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
